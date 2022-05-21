@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Локации Rain world</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="mappage.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Scada&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet">
+<script>
+    function togglemobile() {
+        var mobilemenu=document.querySelector(".mobilemenu")
+        mobilemenu.classList.toggle("active")
+    }
+    function l_image (a) {
+    document.example_img.src = a;
+}
+
+</script>
+</head>
+<body>
+    <div class="menu">
+        
+        <a href="zagl.html" class="logo"></a> 
+        <div class="buttons">
+        <a href="buypage.html" class="buy">
+       <p class="buygame"> Купить игру</p>
+        </a>
+        <a href="movepage.html" class="moveg">
+            <p class="move">Гайд по перемещению</p>
+        </a>
+        <a href="mappage.html" class="mapg">
+            <p class="map">Карта мира</p>
+        </a>
+        <a href="https://rainworld.fandom.com/ru/wiki/Rainworld_%D0%B2%D0%B8%D0%BA%D0%B8" class="wikkig">
+            <p class="wikki">Викки по игре</p>
+        </a>
+        <a class="mobilebtn" onclick="togglemobile();">
+        </a>
+    </div>
+    <ul class="mobilemenu">
+        <li><a href="buypage.html">Купить игру</a></li> 
+        <li><a href="movepage.html">Гайд по перемещению</a></li>
+           <li><a href="mappage.html">Карта мира</a></li>
+           <li><a href="https://rainworld.fandom.com/ru/wiki/Rainworld_%D0%B2%D0%B8%D0%BA%D0%B8">Викки по игре</a></li>
+       </ul>
+    </div>
+    <div class="rect">
+        <div class="choose">Выберите локацию</div>
+        <div class="container"> 
+            <a href="#jump" onclick="l_image('pic/map1.jpg');" class="maps">Окраина</a>
+            <a href="#jump" onclick="l_image('pic/map2.jpg');" class="maps">Промышленный комплекс</a>
+            <a  href="#jump" onclick="l_image('pic/map3.jpg');" class="maps">Водосток</a>
+            <a href="#jump" onclick="l_image('pic/map4.jpg');" class="maps">Дымоход</a>
+            <a  href="#jump" onclick="l_image('pic/map5.jpg');" class="maps">Свалка</a>
+            <a  href="#jump" onclick="l_image('pic/map6.jpg');" class="maps">Затененная цитадель</a>
+            <a  href="#jump" onclick="l_image('pic/map7.jpg');" class="maps">Побережье</a>
+            <a  href="#jump" onclick="l_image('pic/map8.jpg');" class="maps">Небесные острова</a>
+            <a  href="#jump" onclick="l_image('pic/map9.jpg');" class="maps">Массивы ферм</a>
+            <a  href="#jump" onclick="l_image('pic/map10.jpg');" class="maps">Корпус</a>
+            <a  href="#jump" onclick="l_image('pic/map11.jpg');" class="maps">Пять галек</a>
+            <a  href="#jump" onclick="l_image('pic/map12.jpg');" class="maps">Подземка</a>
+        </div>
+        <div class="mapim">
+            <img name="example_img" alt="карты" id="jump" class="mappics" src="pic/placeholder.png"/>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("pic/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin-top: 3.75vh;
+}
+
+.rect {
+  position: absolute;
+  width: 78%;
+  height: 180%;
+  left: 11%;
+  right: 11%;
+  background: #171E36;
+}
+
+.logo {
+  background-image: url(pic/logo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  width: 150px;
+  height: 100%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-left: 20vw;
+}
+
+.mobilebtn {
+  display: block;
+  background-image: url(pic/menubtn.jpg);
+  width: 60px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: none;
+  cursor: pointer;
+}
+
+.menu {
+  font-family: "Cuprum", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 8vh;
+  left: 0em;
+  top: 0em;
+  background: #020202;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 5px rgba(255, 255, 255, 0.25);
+}
+
+.mobilemenu {
+  border-bottom: 1px solid #FFFFFF;
+  list-style-type: none;
+  text-decoration: none;
+  display: none;
+  position: absolute;
+  top: 8vh;
+  float: left;
+  height: 32vh;
+  background-color: #171E36;
+  width: 100%;
+  align-items: center;
+}
+
+.mobilemenu li a:hover {
+  color: #80051B;
+}
+
+.mobilemenu li a {
+  text-decoration: none;
+  font-size: 4vh;
+  color: #FFFFFF;
+  line-height: 8vh;
+}
+
+.mobilemenu.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.buy {
+  display: block;
+  text-decoration: none;
+  align-content: center;
+  text-align: center;
+  position: relative;
+  width: 18.5vw;
+  height: 100%;
+  top: 0px;
+  right: 0%;
+  top: 0%;
+  background: #171B3D;
+  border-right: 5px solid #35446C;
+  border-left: 5px solid #35446C;
+}
+
+.buy:hover {
+  border-right: 5px solid #650315;
+  border-left: 5px solid #650315;
+  background: #80051B;
+}
+
+.buygame {
+  line-height: 7vh;
+  color: #FFFFFF;
+  font-size: 2.5vw;
+}
+
+.inf li {
+  list-style-type: none;
+}
+
+.inf {
+  font-size: 2vw;
+  margin-top: 0%;
+  width: 10.5%;
+  position: absolute;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  font-family: "Scada", sans-serif;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.moveg {
+  top: 0px;
+  text-decoration: none;
+  position: relative;
+  width: 13vw;
+  height: 100%;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.move {
+  color: #FFFFFF;
+  line-height: 7vh;
+  font-size: 1vw;
+}
+
+.moveg:hover {
+  background: #80051B;
+}
+
+.mapg {
+  top: 0px;
+  text-decoration: none;
+  position: relative;
+  width: 13vw;
+  height: 100%;
+  background: #80051B;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.map {
+  line-height: 7vh;
+  color: #FFFFFF;
+  font-size: 1vw;
+}
+
+.mapg:hover {
+  background: #80051B;
+}
+
+.wikkig {
+  top: 0px;
+  text-decoration: none;
+  position: relative;
+  width: 13vw;
+  height: 100%;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.wikki {
+  font-size: 1vw;
+  color: #FFFFFF;
+  line-height: 7vh;
+}
+
+.wikkig:hover {
+  background: #80051B;
+}
+
+.choose {
+  text-align: center;
+  font-family: "Scada", sans-serif;
+  margin-top: 60px;
+  font-size: 3em;
+  color: #FFFFFF;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 5vh;
+  flex-wrap: wrap;
+}
+
+.container a {
+  width: 250px;
+  display: block;
+  padding: 15px;
+  margin: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #020202;
+  font-family: "Scada", sans-serif;
+  font-size: 1.5em;
+  border: 1px solid #FFFFFF;
+  text-decoration: none;
+}
+
+.maps:hover {
+  color: #80051B;
+}
+
+.maps:focus {
+  color: #80051B;
+}
+
+.mapim {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.mappics {
+  width: 60vw;
+  height: 50vh;
+  border: 1px solid #FFFFFF;
+  background-color: #020202;
+  padding: 15px;
+  margin: 15px;
+}
+
+@media (max-width: 800px) {
+  .mobilebtn {
+    display: block;
+  }
+
+  .buy {
+    display: none;
+  }
+
+  .moveg {
+    display: none;
+  }
+
+  .mapg {
+    display: none;
+  }
+
+  .wikkig {
+    display: none;
+  }
+
+  .menu {
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .rect {
+    height: 255%;
+  }
+
+  .mappics {
+    height: 30vh;
+  }
+}/*# sourceMappingURL=mappage.css.map */

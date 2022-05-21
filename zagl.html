@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Rain world</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="frontpage.css">
+<script src="xml.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Scada&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+        function toggle() {
+            var trailer=document.querySelector(".trailer")
+            var video=document.querySelector("video")
+            var vid=document.querySelector(".vid")
+            var pic=document.querySelector(".pics");
+
+            trailer.classList.toggle("active")
+            pic.classList.toggle("active")
+            vid.classList.toggle("active")
+
+            video.pause();
+            video.currentTime = 0;
+        }
+        function l_image (a) {
+        document.example_img.src = a;
+        var foc=document.querySelector("a")
+        foc.classList.l_image("active")
+    }
+    function togglemobile() {
+            var mobilemenu=document.querySelector(".mobilemenu")
+            mobilemenu.classList.toggle("active")
+        }
+        
+     
+      
+    </script>
+    <script src="js/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="menu">
+        <a href="zagl.html" class="logo"></a> 
+        <div class="buttons">
+        <a href="buypage.html" class="buy"><p class="buygame"> Купить игру</p> </a>
+        <a href="movepage.html" class="moveg"> <p class="move">Гайд по перемещению</p></a>
+        <a href="mappage.html" class="mapg"><p class="map">Карта мира</p> </a>
+        <a href="https://rainworld.fandom.com/ru/wiki/Rainworld_%D0%B2%D0%B8%D0%BA%D0%B8" class="wikkig"> <p class="wikki">Викки по игре</p> </a>
+        <a class="mobilebtn" onclick="togglemobile();">   </a>
+    </div>
+    <ul class="mobilemenu">
+        <li><a href="buypage.html">Купить игру</a></li> 
+        <li><a href="movepage.html">Гайд по перемещению</a></li>
+           <li><a href="mappage.html">Карта мира</a></li>
+           <li><a href="https://rainworld.fandom.com/ru/wiki/Rainworld_%D0%B2%D0%B8%D0%BA%D0%B8">Викки по игре</a></li>
+       </ul>
+    </div>
+    <div class="main">
+        <div class="gameim">
+            <div class="trailer">
+                <video controls src="pic/Rain_World_Trailer_Fate_of_a_Slugcat_Adult_Swim_Games.mp4"  ></video>   
+            </div>
+           <img alt="Изображения игры" name="example_img" class="pics" src="pic/mainphoto.jpg"/>   
+        </div>
+        </div>
+        <ul class="inf">
+        <li>Издатель: Adult Swim Games</li>
+        <li> Разработчик: Videocult</li>
+        <li>Дата выхода: 28 мар. 2017</li>
+        </ul>
+    <div class="rect">
+        <div class="gallerybox">
+            <ul class="gall">
+    <li><a class="gall1"  onclick="l_image('pic/mainphoto.jpg');"> </a>  </li>
+    <li> <a class="vid" onclick="toggle();"> </a></li>
+    <li> <a class="gall2" onclick="l_image('pic/gall1.jpg')"> </a></li>
+    <li> <a class="gall3" onclick="l_image('pic/gall2.jpg')"> </a></li>
+    <li> <a class="gall4" onclick="l_image('pic/gall3.jpg')"> </a> </li>
+    <li><a class="gall5" onclick="l_image('pic/gall4.jpg')"> </a> </li>
+            </ul>
+        </div>
+  <div>
+        <div class="description">Описание игры </div>
+       <div class="desc1">  Вы слизнекот. Вокруг вас мир, полный опасностей, и вам предстоит справляться с ними в одиночку. Вы потеряли семью во время разрушительного наводнения и теперь вынуждены охотиться, чтобы не умереть с голоду, и искать убежища в перерывах между бушующими ливнями, которые грозят утопить все живое. Пробирайтесь по руинам древней цивилизации, не попадайтесь в пасть злобным хищникам и открывайте новые земли, полные странных существ и древних тайн. Доберитесь до своей семьи, пока смерть не пришла за вами!</div>
+      <div class="desc2">  Этот платформер на выживание, вдохновленный простотой и эстетикой 16-битной классики, потребует от вас быстроты и скрытности, будь то охота или спасение от голодных хищников. Прожорливые враги хитры, злы и всегда наготове вонзить зубы в вас или даже своего сородича. Вам, маленькому мягкому слизнекотику, нечего и надеяться на силу — вы можете полагаться лишь на скрытность и смекалку: изучите экосистему и используйте ее особенности себе на пользу. Может быть, тогда вам и удастся выжить в… Rain World!</div>
+      <ul class="features">
+        <li id="feature1"> Крадитесь, карабкайтесь и пробирайтесь через динамичную, постоянно меняющуюся экосистему, где каждый является хищником или жертвой. </li>
+        <li id="feature2"> Исследуйте огромный мир из более чем 1600 комнат, охватывающих 12 различных регионов, наполненных древними тайнами и неизведанными опасностями. </li>
+        <li id="feature3"> Проворные движения и процедурно сгенерированная анимация придают слизнекотику естественную плавность движений и уникальное ощущение веса. </li>
+        <li id="feature4"> Интенсивные столкновения с первобытными хищниками бросят вызов вашим рефлексам. </li>
+        <li id="feature5"> Ограниченные ресурсы и постоянная надвигающаяся угроза дождя проверят ваши нервы. </li>
+      </ul>
+    </div>
+      <div class="description">Анимация</div>
+      <div class="desc2">Существа Rain World анимированы с помощью комбинации кода и традиционной анимации. Это делает их мягкими и гибкими, а также восприимчивыми к окружающей среде.</div>
+      <div class="gifs">
+      <img alt="анимация игры 1" src="pic/1.gif"/>
+      <img alt="анимация игры 2" src="pic/2.gif"/>
+      <img alt="анимация игры 3" src="pic/3.gif"/>
+      <img alt="анимация игры 4" src="pic/4.gif"/>
+    </div>
+    </div>
+<footer>
+    <img alt="логотип разработчика" src="pic/footerlogo.png"/>
+    <div class="footinfo">VIDEOCULT — это независимая студия видеоигр, находящаяся в Бостоне, Массачусетс, специализирующаяся на разработке игр с немного эзотерическим уклоном. Мы заинтересованы в создании умного искусственного интеллекта, иммерсивных песочниц и эмоционально насыщенных игровых впечатлений, которые останутся с вами надолго после того, как вы отложите контроллер.</div>
+</footer>
+</body>
+</html>
+
+
+
